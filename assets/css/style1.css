@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+}
+
+body{
+    background: #ededed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    color:#333;
+}
+
+header {
+    background-color: #497980;
+    border-bottom: #44e9ff solid 5px;
+    padding: 30px 25px;
+}
+
+header p {
+    color:rgb(192, 246, 253);
+    margin: 5px 0 20px;
+    font-size: 2rem;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+}
+
+.page-title {
+    color: #44e9ff;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 4.5rem;
+}
+
+.btn {
+    background-color: #44e9ff;
+    border-radius: 12px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px #333;
+    font-size: 2.2rem;
+    position: relative;
+    top: -3px;
+}
+
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 25px auto;
+}
+
+.task-list-wrapper {
+    flex:1;
+    margin: 0 20px 20px;
+}
+
+.list-title {
+    color: #497980;
+    font-size: 2.6rem;
+}
+
+.task-list {
+    list-style: none;
+    background: rgb(196, 196, 196);
+    border-radius: 12px;
+    padding: 15px;
+    border:2px solid #333;
+    height: calc(100% - 50px);
+}
+
+.task-item {
+    background: rgb(192, 246, 253);
+    padding: 15px 15px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    color:#333;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color:  #497980;
+    border-top: #44e9ff solid 5px;
+    color: rgb(192, 246, 253);
+    padding: 20px;
+    font-size: 2.4rem;
+}
