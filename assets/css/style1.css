@@ -97,3 +97,44 @@ footer {
     padding: 20px;
     font-size: 2.4rem;
 }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+form .form-group {
+    flex:1;
+    margin: 10px 6px 10px 0px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    border: none;
+    font-size: 2.2rem;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+
+.select-dropdown {
+    display: block;
+    font-size: 2.2rem;
+    color: #444;
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 12px;
+    border: 2px solid #333;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("../images/select-arrow.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
