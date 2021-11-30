@@ -89,6 +89,15 @@ li {
     margin-bottom: 20px;
 }
 
+.task-name {
+    margin:0;
+    font-size: 1.8rem;
+}
+
+task-type {
+    color: #497980;
+    font-size:1.55rem;
+}
 footer {
     width: 100%;
     background-color:  #497980;
