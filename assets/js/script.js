@@ -93,11 +93,37 @@ const createTaskActions = function(taskId){
 formEl.addEventListener("submit",taskFormHandler);
 
 const taskButtonHandler = function(event) {
+    // get target element from event
+    let targetEl = event.target;
 
-    if(event.target.matches(".delete-btn")){
-        let taskId = event.target.getAttribute("data-task-id");
+    // edit button was clicked
+    if(targetEl.matches(".edit-btn")){
+        let taskId = targetEl.getAttribute("data-task-id");
+        editTask(taskId);
+    } 
+
+    // delete button was clicked
+    if(targetEl.matches(".delete-btn")){
+        let taskId = targetEl.getAttribute("data-task-id");
         deleteTask(taskId);
     }
+};
+
+const editTask = function(taskId){
+    console.log("editing task #" + taskId);
+
+    // get task list item element
+    let taskSelected=document.querySelector(".task-item[data-task-id='" + taskId + "']");
+
+    // get content from task name and type
+    let taskName = taskSelected.querySelector("h3.task-name").textContent;
+    document.querySelector("input[name='task-name']").value = taskName;
+
+    let taskType = taskSelected.querySelector("span.task-type").textContent;
+    document.querySelector("select[name='task-type']").value = taskType;
+
+    document.querySelector("#save-task").textContent="Save Task";
+    formEl.setAttribute("data-task-id", taskId);
 };
 
 const deleteTask = function(taskId){
