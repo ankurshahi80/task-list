@@ -229,3 +229,17 @@ form input {
   font-weight: normal;
   font-size: 2rem;
 }
+
+@media screen and (max-width:980px) {
+    form .form-group {
+        flex: 1 100%;
+    }
+
+    form .form-group button{
+        width:100%;
+    }
+
+    .task-list-wrapper {
+        flex: 1 100%;
+    }
+}
